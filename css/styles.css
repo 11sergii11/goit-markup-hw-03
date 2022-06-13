@@ -195,7 +195,6 @@ li {
   margin: auto;
 }
 .mishion {
-    padding-top: 94px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -217,7 +216,7 @@ li {
   display: flex;
   justify-content: centr;
   padding-left: 0px;
-  /* background-color: #2196f3; */
+  background-color: #2196f3;
 }
 .team-box-unit {
   width: 270px;
