@@ -219,7 +219,7 @@ li {
   width: 1600px;
   display: flex;
   justify-content: centr;
-  /* padding-left: 0px; */
+  padding-left: 0px;
   background-color: #2196f3;
 }
 .team-box-unit {
