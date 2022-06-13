@@ -21,9 +21,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1600px;
+  margin: 0;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute;
