@@ -188,10 +188,14 @@ li {
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
 }
-.mishion {
+.pic {
+  width: 1220px;
   display: flex;
-  justify-content: center;
-  padding-top: 94px;
+  justify-content: space-between;
+  margin: auto;
+}
+.mishion {
+    padding-top: 94px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -200,41 +204,32 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-}
-.pic {
-  width: 1220px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 10px;
 }
 .team {
   background-color: var(--background-second-color);
-  /*padding-bottom: 94px;
- padding-top: 186px; */
-}
-
-.team-box {
-  box-sizing: border-box;
   width: 1600px;
-  /* height: 648px; */
+  height: 650px;
+}
+.team-box {
+  width: 1600px;
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 94px;
-  padding-top: 100px;
+  justify-content: centr;
+  padding-left: 0px;
   /* background-color: #2196f3; */
 }
 .team-box-unit {
   width: 270px;
   height: 368px;
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin: 0 15px 0 15px;
 }
 .soname {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -242,16 +237,15 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
+  margin-top: 30px;
 }
 .job {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
-  /* text-align: center; */
+  line-height: 0;
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
 }
