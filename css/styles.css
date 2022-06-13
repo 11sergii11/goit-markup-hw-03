@@ -11,7 +11,7 @@
   --text-main-color: #2f303a;
   --text-sekond-color: #757575;
   --background-second-color: #f5f4fa;
-  --background: #E5E5E5;
+  --background: #e5e5e5;
   --e-adress-color: rgba(225, 225, 225, 0.6);
 }
 body {
@@ -21,6 +21,9 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+.container {
+  width: 1600px;
 }
 .visually-hidden {
   position: absolute;
@@ -34,16 +37,41 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* padding: 10px; */
+  background-color: tomato;
+  margin: 0;
+}
+.nav,
+.nav-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.nav-info {
+  width: 94px;
+  padding-left: 93px;
+}
 a {
   text-decoration: none;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-   letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   color: var(--main-brand-color);
 }
 .studio {
@@ -59,13 +87,20 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--sekond-brand-color);
-  }
-.active{
+}
+.active {
   color: var(--main-brand-color);
 }
 .nav > li a:hover {
   color: var(--buttom-second-color);
 }
+.heder-contacts {
+  display: flex;
+  /*align-items: center;
+  width: 307px;
+  justify-content: space-between; */
+}
+
 .heder-contacts a {
   font-family: 'Roboto';
   font-style: normal;
@@ -76,8 +111,18 @@ a {
 .heder-contacts a:hover {
   color: var(--main-brand-color);
 }
-
+.grafit {
+  background-color: var(--text-main-color);
+  margin: 0;
+}
+.effectiv {
+  width: 1600px;
+  height: 600px;
+}
 .solution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
@@ -89,7 +134,7 @@ a {
   color: var(--main-body-color);
 }
 .order {
-    width: 200px;
+  width: 200px;
   height: 50px;
   background: var(--main-brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -112,6 +157,17 @@ a {
 .order:focus {
   cursor: progress;
 }
+.fors {
+  display: flex;
+  justify-content: center;
+  margin: 94px;
+  padding-left: 0px;
+  background-color: aqua;
+}
+.fors-li {
+  padding-left: 10px;
+  padding-right: 5px;
+}
 li {
   list-style: none;
 }
@@ -124,6 +180,7 @@ li {
   color: var(--sekond-brand-color);
 }
 .skils {
+  width: 270px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -132,6 +189,9 @@ li {
   color: var(--text-sekond-color);
 }
 .mishion {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -141,19 +201,51 @@ li {
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
 }
-.team{
+.pic {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.team {
   background-color: var(--background-second-color);
+  /*padding-bottom: 94px;
+ padding-top: 186px; */
+}
+
+.team-box {
+  box-sizing: border-box;
+  width: 1600px;
+  /* height: 648px; */
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 94px;
+  padding-top: 100px;
+  /* background-color: #2196f3; */
+}
+.team-box-unit {
+  width: 270px;
+  height: 368px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .soname {
+  display: flex;
+  justify-content: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-   letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
 }
 .job {
+  display: flex;
+  justify-content: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -181,9 +273,7 @@ li {
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
 }
-.grafit {
-  background-color: var(--text-main-color);
-}
+
 .adress {
   font-family: 'Roboto';
   font-weight: 400;
@@ -201,9 +291,15 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.adress:hover, .e-adress:hover,
-.e-adress:focus, .adress:focus {
+.adress:hover,
+.e-adress:hover,
+.e-adress:focus,
+.adress:focus {
   color: var(--main-brand-color);
+}
+.filtr-menu {
+  display: flex;
+  display: inline-flexbox;
 }
 .filtr {
   width: 128px;
@@ -225,7 +321,8 @@ li {
   color: var(--sekond-brand-color);
   cursor: pointer;
 }
-.filtr:hover, .filtr:focus {
+.filtr:hover,
+.filtr:focus {
   background: var(--main-brand-color);
   color: var(--main-body-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
