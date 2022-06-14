@@ -26,8 +26,8 @@ body {
 }
 .container {
   width: 1600px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .visually-hidden {
   position: absolute;
