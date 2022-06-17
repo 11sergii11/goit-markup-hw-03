@@ -14,12 +14,6 @@
   --background: #e5e5e5;
   --e-adress-color: rgba(225, 225, 225, 0.6);
 }
-/* main {
-  display: flex;
-  width: 1600px;
-  margin: 0;
-  padding: 0; 
-}*/
 body {
   font-style: normal;
   font-family: sans-serif;
@@ -74,7 +68,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--sekond-brand-color);
-  /* margin-left: 25px; */
 }
 .center {
   margin: 0 25px;
@@ -291,7 +284,6 @@ li {
 }
 .grafit {
   background-color: var(--text-main-color);
-  /* margin: 94px auto 0px auto; */
   width: auto;
   height: 252px;
   padding: 60px;
@@ -343,7 +335,6 @@ li {
   color: var(--main-brand-color);
 }
 
-/*  */
 .menu.center {
   display: flex;
   justify-content: center;
@@ -377,7 +368,6 @@ li {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/*  */
 .projekts {
   max-width: 1200px;
   padding: 0px 7px;
@@ -406,7 +396,6 @@ li {
 .job-project:nth-child(-n + 3) {
   margin-top: 0px;
 }
-/* margin-bottom: 0px; */
 .job-result {
   margin-top: 20px;
   margin-left: 24px;
