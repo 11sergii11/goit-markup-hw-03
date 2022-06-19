@@ -15,62 +15,85 @@
   --e-adress-color: rgba(225, 225, 225, 0.6);
 }
 body {
-  font-style: normal;
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--sekond-brand-color);
   background-color: var(--main-body-color);
   font-size: 14px;
-  line-height: 1.14;
+  /* line-height: 1.14; */
   letter-spacing: 0.03em;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  min-width: 100%;
+  height: auto; /**/
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+}
+.link {
+  text-decoration: none;
+  padding: 0px;
+}
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  padding: 0;
+}
 .container {
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-bottom: 24px;
-  padding-left: 215px;
-  padding-right: 215px;
-  /* background-color: #607d8b; */
   border-bottom: 1px solid #ececec;
 }
 .nav {
   display: flex;
-  padding: 0px;
   margin-right: auto;
-  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
   /* background-color: gray; */
-  }
+}
 
 .logo-header {
   font-family: "Raleway";
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-brand-color);
   margin-right: 93px;
-  /* background-color: #ff5722; */
-  text-decoration: none;
 }
+
 .studio {
   color: var(--sekond-brand-color);
 }
 .nav-info {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--sekond-brand-color);
-}
-.center {
-  margin: 0 25px;
+  margin-right: 50px;
 }
 .active {
   color: var(--main-brand-color);
@@ -80,12 +103,10 @@ body {
 }
 .nav .nav-info {
   display: block;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
 }
 .heder-contacts {
   display: flex;
+  justify-content: end;
   margin: 0px;
   list-style: none;
   /* background-color: #2196f3; */
@@ -100,21 +121,16 @@ body {
 .heder-contacts a:hover {
   color: var(--main-brand-color);
 }
-.heder-contacts-link{
+.heder-contacts-link {
   margin-left: 50px;
-}
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
 }
 .market {
   background-color: var(--text-main-color);
   margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
   width: 1600px;
-  height: 600px;
+  /* height: 600px; */
 }
 .effectiv {
   display: flex;
@@ -122,13 +138,10 @@ li {
   margin-top: 20px;
 }
 .solution {
-  display: flex;
-  justify-content: center;
   text-align: center;
-  padding-top: 200px;
-  margin: 0px;
+  width: 650px;
+  margin: 0px auto;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -146,7 +159,6 @@ li {
   border-radius: 4px;
   /* text buttom */
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -175,12 +187,15 @@ li {
 }
 .fors {
   display: flex;
-  justify-content: center;
-  margin: 94px;
-  padding-left: 0px;
 }
 .fors-li {
   margin: 0 15px 0 15px;
+}
+.fors-li:first-child {
+  margin-left: 0px;
+}
+.fors-li:last-child {
+  margin-right: 0px;
 }
 .soft-skils {
   font-family: "Roboto";
@@ -200,12 +215,10 @@ li {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
-  /* background-color: antiquewhite; */
   margin: 0;
 }
 .hobby {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -218,18 +231,21 @@ li {
   width: 1200px;
   display: flex;
   margin: 0 auto 94px auto;
-  /* background-color: #2196f3; */
-  padding-left: 0px;
+  padding: 0px;
 }
 .img-box {
   margin: auto 15px auto 15px;
 }
+.img-box:first-child {
+  margin-left: 0px;
+}
+.img-box:last-child {
+  margin-right: 0px;
+}
 .team {
   background-color: var(--background-second-color);
   width: 1600px;
-  height: 650px;
   padding: 94px;
-  margin: 0px;
 }
 .mishion {
   font-family: "Roboto";
@@ -240,17 +256,15 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  /* background-color: #2196f3; */
   margin: 0px auto 50px auto;
 }
 
 .team-box {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  justify-content: flex-end;
-  /* background-color: #2196f3; */
+  padding: 0;
+  justify-content: center;
 }
 .team-box-unit {
   width: 270px;
@@ -261,10 +275,15 @@ li {
   border-radius: 0px 0px 4px 4px;
   margin: auto 15px auto 15px;
 }
+.team-box-unit:first-child {
+  margin-left: 0px;
+}
+.team-box-unit:last-child {
+  margin-right: 0px;
+}
 .soname {
   text-align: center;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -275,25 +294,26 @@ li {
 .job {
   text-align: center;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 0;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
+  margin-top: 10px;
 }
 .grafit {
   background-color: var(--text-main-color);
-  width: auto;
+  width: 1600px;
   height: 252px;
   padding: 60px;
+  margin: 0 auto;
 }
 .logo {
   width: 1200px;
   display: block;
   margin: 0px auto 20px auto;
   font-family: "Raleway";
-  font-style: normal;
+  text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -321,7 +341,6 @@ li {
 }
 .e-adress {
   color: var(--e-adress-color);
-  text-decoration: none;
   font-style: normal;
   font-family: "Roboto";
   font-weight: 400;
@@ -369,26 +388,28 @@ li {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projekts {
-  max-width: 1200px;
-  padding: 0px 7px;
   margin: 0px auto 94px auto;
-  /* background-color: #2196f3; */
 }
 .job-list {
   display: flex;
-  /* Make a flex container multiline */
   flex-wrap: wrap;
-  /* Set gap between rows and columns */
+  justify-content: center;
   gap: 10px;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 .job-project {
   padding: 0px;
-  margin: 8px;
+  margin: 10px;
+}
+.job-project-box {
+  padding-top: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   background-color: var(--main-body-color);
-  border-radius: 0px;
-  border: 1px solid #eeeeee;
 }
 .job-project:nth-child(n + 7) {
   margin-bottom: 0px;
@@ -396,13 +417,16 @@ li {
 .job-project:nth-child(-n + 3) {
   margin-top: 0px;
 }
+.job-project:nth-child(3n) {
+  margin-right: 0px;
+}
+.job-project:nth-child(3n + 1) {
+  margin-left: 0px;
+}
 .job-result {
-  margin-top: 20px;
-  margin-left: 24px;
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -410,9 +434,7 @@ li {
 }
 .job-title {
   margin-bottom: 30px;
-  margin-left: 24px;
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88px;
