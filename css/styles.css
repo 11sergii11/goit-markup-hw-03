@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 :root {
+  --card-team-gap: 30px;
+  --card-projects-gap: 20px;
   --main-brand-color: #2196f3;
   --sekond-brand-color: #212121;
   --main-body-color: #ffffff;
@@ -33,7 +35,7 @@ p {
 img {
   display: block;
   min-width: 100%;
-  height: auto; /**/
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -43,11 +45,7 @@ a {
   margin: 0;
   padding-left: 0px;
 }
-li {
-  /*list-style: none;
-  margin: 0;
-   padding-left: 0px; */
-}
+
 .link {
   text-decoration: none;
   padding: 0px;
@@ -183,7 +181,6 @@ li {
 }
 .fors-li {
   margin-left: 30px;
-  /* min-width: 260px; */
   max-width: 270px;
 }
 .fors-li:first-child {
@@ -216,56 +213,58 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .pic {
-    display: flex;
+  display: flex;
 }
 .img-box {
   margin-right: 30px;
-  }
+}
 .img-box:last-child {
   margin-right: 0px;
 }
 .team {
   background-color: var(--background-second-color);
   width: 1600px;
-  padding: 94px;
+  margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
+
 .mishion {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  margin: 0px auto 50px auto;
+  padding-bottom: 50px;
 }
 
 .team-box {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  padding: 0;
   justify-content: center;
 }
+
+.team-box > .team-box-unit {
+  flex-basis: calc(100% / 4 - var(--card-team-gap));
+  margin-left: var(--card-team-gap);
+}
 .team-box-unit {
-  width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin: auto 15px auto 15px;
 }
 .team-box-unit:first-child {
   margin-left: 0px;
 }
-.team-box-unit:last-child {
-  margin-right: 0px;
+.team-box-info {
+  padding: 30px 59px 30px 59px;
 }
+
 .soname {
   text-align: center;
   font-family: 'Roboto';
@@ -274,7 +273,6 @@ li {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  margin-top: 30px;
 }
 .job {
   text-align: center;
@@ -289,7 +287,6 @@ li {
 .grafit {
   background-color: var(--text-main-color);
   width: 1600px;
-  height: 252px;
   padding: 60px;
   margin: 0 auto;
 }
@@ -338,14 +335,13 @@ li {
 .adress:focus {
   color: var(--main-brand-color);
 }
-
-.menu.center {
-  display: flex;
-  justify-content: center;
-  padding: 0px;
+.buttom-unit {
   margin-top: 94px;
   margin-bottom: 50px;
-  list-style: none;
+}
+.menu {
+  display: flex;
+  justify-content: center;
 }
 .menu .link {
   display: block;
@@ -372,25 +368,19 @@ li {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.projekts {
-  margin: 0px auto 94px auto;
-}
+
 .job-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 .job-project {
-  padding: 0px;
-  margin: 10px;
+  flex-basis: calc(100% / 3 - var(--card-projects-gap));
+  margin-left: var(--card-projects-gap);
+  margin-top: var(--card-projects-gap);
 }
 .job-project-box {
-  padding-top: 20px;
-  padding-left: 24px;
+  padding: 20px 24px 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -418,7 +408,7 @@ li {
   letter-spacing: 0.06em;
 }
 .job-title {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
