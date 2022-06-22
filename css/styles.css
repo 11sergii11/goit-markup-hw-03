@@ -376,6 +376,7 @@ a {
   /* justify-content: center; */
 }
 .job-project {
+  cursor: pointer;
   flex-basis: calc(100% / 3 - var(--card-projects-gap));
   margin-left: var(--card-projects-gap);
   margin-top: var(--card-projects-gap);
