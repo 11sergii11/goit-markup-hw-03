@@ -5,7 +5,7 @@
 }
 :root {
   --card-team-gap: 30px;
-  --card-projects-gap: 20px;
+  --card-projects-gap: 30px;
   --main-brand-color: #2196f3;
   --sekond-brand-color: #212121;
   --main-body-color: #ffffff;
@@ -51,11 +51,10 @@ a {
   padding: 0px;
 }
 .section {
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-top: 94px; */
-  margin-bottom: 94px;
-  padding: 0;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* padding: 0; */
 }
 .container {
   width: 1200px;
@@ -63,8 +62,6 @@ a {
   padding: 0 15px;
 }
 .header {
-  display: flex;
-  align-items: center;
   padding-top: 25px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
@@ -72,10 +69,14 @@ a {
 .header-navigator {
   margin-right: 50px;
 }
+.header-navigator:last-child {
+  margin-right: 0px;
+}
 
 .nav {
   display: flex;
   margin-right: auto;
+  align-items: center;
 }
 
 .logo-header {
@@ -205,6 +206,9 @@ a {
   color: var(--text-sekond-color);
   margin: 0;
 }
+.work {
+  padding-top: 0px;
+}
 .hobby {
   font-family: 'Roboto';
   font-weight: 700;
@@ -213,7 +217,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .pic {
   display: flex;
@@ -226,10 +230,6 @@ a {
 }
 .team {
   background-color: var(--background-second-color);
-  width: 1600px;
-  margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 
 .mishion {
@@ -240,7 +240,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--sekond-brand-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-box {
@@ -262,7 +262,7 @@ a {
   margin-left: 0px;
 }
 .team-box-info {
-  padding: 30px 59px 30px 59px;
+  padding: 30px 0;
 }
 
 .soname {
@@ -286,14 +286,11 @@ a {
 }
 .grafit {
   background-color: var(--text-main-color);
-  width: 1600px;
-  padding: 60px;
-  margin: 0 auto;
+  padding: 60px 0;
 }
 .logo {
-  width: 1200px;
   display: block;
-  margin: 0px auto 20px auto;
+  margin-bottom: 20px;
   font-family: 'Raleway';
   text-decoration: none;
   font-weight: 700;
@@ -306,12 +303,13 @@ a {
   color: var(--main-body-color);
 }
 .footer-contacts-block {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0;
+  margin-bottom: 9px;
 }
 .footer-contacts {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
+}
+.footer-contacts:last-child {
+  margin-bottom: 0;
 }
 .adress {
   font-family: 'Roboto';
@@ -342,15 +340,18 @@ a {
 .menu {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+}
+.filtr {
+  margin: 0 8px 0 0px;
+}
+.filtr:last-child {
+  margin: 0;
 }
 .menu .link {
-  display: block;
   padding: 6px 22px;
   border-radius: 4px;
-  text-decoration: none;
   border: 0;
-  margin: 0 4px 0 4px;
-  /*  text buttom */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -372,7 +373,7 @@ a {
 .job-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .job-project {
   flex-basis: calc(100% / 3 - var(--card-projects-gap));
@@ -384,7 +385,6 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  background-color: var(--main-body-color);
 }
 .job-project:nth-child(n + 7) {
   margin-bottom: 0px;
@@ -399,8 +399,7 @@ a {
   margin-left: 0px;
 }
 .job-result {
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 4px;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 18px;
@@ -408,11 +407,10 @@ a {
   letter-spacing: 0.06em;
 }
 .job-title {
-  margin-bottom: 10px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-sekond-color);
 }

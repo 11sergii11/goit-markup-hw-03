@@ -22,50 +22,54 @@
 
   <body>
     <!-- Логотип -->
-    <header class="header container">
-      <a href="./12index.html" class="logo-header">Web<span class="studio">Studio</span></a>
-      <ul class="nav list">
-        <li class="header-navigator list">
-          <a href="./index.html" class=" nav-info">Студия</a>
-        </li>
-        <li class="header-navigator list">
-          <a href="./portfolio.html" class="active nav-info">Портфолио</a>
-        </li>
-        <li class="header-navigator list"><a href="#contacts" class="nav-info">Контакты</a></li>
-      </ul>
-      <ul class="heder-contacts list">
-        <li class="heder-contacts-link">
-          <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
-        </li>
-        <li class="heder-contacts-link">
-          <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
-        </li>
-      </ul>
+    <header class="header">
+      <div class="container nav">
+        <a href="./12index.html" class="logo-header">Web<span class="studio">Studio</span></a>
+        <nav class="nav">
+          <ul class="nav list">
+            <li class="header-navigator">
+              <a href="./index.html" class="nav-info">Студия</a>
+            </li>
+            <li class="header-navigator">
+              <a href="./portfolio.html" class="active nav-info">Портфолио</a>
+            </li>
+            <li class="header-navigator"><a href="#contacts" class="nav-info">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="heder-contacts list">
+          <li class="heder-contacts-link">
+            <a href="mailto:info@devstudio.com" class="mail">info@devstudio.com</a>
+          </li>
+          <li class="heder-contacts-link">
+            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
       <!-- Фильтр конопки -->
       <section class="section">
-        <div class="container buttom-unit">
+        <div class="container section buttom-uni">
           <ul class="menu list">
-            <li class="item"><button class="link" type="button">Все</button></li>
-            <li class="item">
+            <li class="item filtr"><button class="link" type="button">Все</button></li>
+            <li class="item filtr">
               <button class="link" type="button">Веб-сайты</button>
             </li>
-            <li class="item">
+            <li class="item filtr">
               <button class="link" type="button">Приложения</button>
             </li>
-            <li class="item">
+            <li class="item filtr">
               <button class="link" type="button">Дизайн</button>
             </li>
-            <li class="item">
+            <li class="item filtr">
               <button class="link" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <!-- Портфолио -->
-        <h1 class="visually-hidden">Портфолио</h1>
-        <div class="section container">
+
+          <!-- Портфолио -->
+          <h1 class="visually-hidden">Портфолио</h1>
+
           <ul class="job-list list">
             <li class="job-project">
               <img src="./images/tehnokrjak-website.jpg" width="370" height="294" alt="Технокряк" />
